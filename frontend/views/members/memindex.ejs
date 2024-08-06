@@ -5,14 +5,14 @@
     <%- include('../partials/nav.ejs') %>
 
     <div class="members content">
-      <h2> All Members</h2>
+      <h2> All Owners</h2>
       <% if(members.length>0){ %> <% members.forEach(members => { %>
       <a class="single" href="/members/<%= members._id %>">
       <h3 class="title"><%= members.username %></h3>
     </a>
       <% });%> 
       <% } else { %>
-        <p>There are no members to display...</p>
+        <p>There are Owners to display...</p>
       <% } %>
     </div>
 

@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const memberSchema = new Schema({
     username : String,
     email : String,
-    issued : String
+    issued : String,
 },{timestamps: true});
 
 const Member = mongoose.model('Member', memberSchema);

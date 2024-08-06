@@ -6,11 +6,11 @@
     
     <div class="updateform content">
         <form action="/books/update/<%= book._id %>" id="updateform" method="POST">
-            <label for="title">Book Title:</label>
+            <label for="title">Land Record:</label>
             <input type="text" id="title" name="title" value='<%= book.title %>'>
-            <label for="author">Author:</label>
+            <label for="author">Owner:</label>
             <input type="text" id="author" name="author" value='<%= book.author %>'>
-            <label for="pages">Pages:</label>
+            <label for="pages">Plot size (acre):</label>
             <input type="number" id="pages" name="pages" value='<%= book.pages %>'>
             <input type="submit" name="submit" value="Update" id="updatebutton">
         </form>

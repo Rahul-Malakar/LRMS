@@ -5,14 +5,14 @@
     <%- include('../partials/nav.ejs') %>
 
     <div class="books content">
-      <h2> All Books</h2>
+      <h2>Land Record Details</h2>
       <% if(books.length>0){ %> <% books.forEach(books => { %>
       <a class="single" href="/books/<%= books._id %>">
       <h3 class="title"><%= books.title %></h3>
     </a>
       <% });%> 
       <% } else { %>
-        <p>There are no books to display...</p>
+        <p>There is no data to display...</p>
       <% } %>
     </div>
 

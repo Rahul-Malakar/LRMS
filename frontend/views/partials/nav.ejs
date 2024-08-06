@@ -1,17 +1,17 @@
 <nav>
     <div class="sidetitle">
-      <a href="/"><h1>Library Management System</h1></a>
+      <a href="/"><h1>Land Record Management System</h1></a>
       <% if(user){ %>
-        <p>Welcome <%= user.email %></p>
+        <p>Welcome Admin : <%= user.email %></p>
       <% } %>
     </div>
     <ul>
       
-      <li><a href="/">Books</a></li>
-      <li><a href="/books/create">New Book</a></li>
+      <li><a href="/">Locations</a></li>
+      <li><a href="/books/create">New Location</a></li>
      
-      <li><a href="/members">Members</a></li>
-      <li><a href="/members/add">New Member</a></li>
+      <li><a href="/members">Owners</a></li>
+      <li><a href="/members/add">New Owner</a></li>
 
       <% if(user){%>
       <li><a href="/logout">Logout</a></li>
